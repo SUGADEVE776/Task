@@ -17,7 +17,7 @@ resource "aws_instance" "instance_2" {
     on_failure = continue
   }
 }
-module "website_s3_bucket" {
+module "website_s3_bucket_1" {
   source = "./modules/aws-s3-static-website-bucket"
 
   bucket_name = "clickittech-terraform-best-practices"
